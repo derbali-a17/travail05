@@ -40,10 +40,9 @@ public class MainActivity extends AppCompatActivity {
             Log.d("DBDebug", adr.toString());
         }
 
-
         IPersonneDAO dao2 = new PersonneDAOImpl(this);
         //ajouter une nouvelle personne
-       Personne personne = new Personne();
+       /*Personne personne = new Personne();
        personne.setNom("Test4 Test4");
        personne.setDateNaissance("2001-09-09");
        personne = dao2.ajouter(personne, 1);
@@ -51,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d("DBDebug", "Nouvelle personne: "  + personne.toString());
         else
             Log.d("DBDebug", "Erreur lors l'ajout d'une personne");
-
+*/
         //trouver les personnes
 
         List<Personne> personnes = dao2.trouver(1);
